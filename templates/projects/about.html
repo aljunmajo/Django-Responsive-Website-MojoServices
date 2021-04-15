@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<main id="main">
+  <div class="container">
+
+    <section class="about-info row">
+        <div class="col-md-12">
+  
+            <h2>Company Info</h2>
+            <img class="img img-responsive center-block" src="{% static 'images/about-image.jpg' %}" alt="Company Profile Picture">
+            <p>Ut commodo, ligula non viverra congue, turpis ligula pharetra risus, ut sodales tellus nisl eget nisi. Pellentesque gravida nec ligula a ultrices. Morbi quis arcu sed nisl mattis aliquam. Fusce a ornare magna. Vivamus sollicitudin leo ac volutpat facilisis. Ut diam dui, porta a lorem venenatis, sollicitudin rhoncus justo. Nulla feugiat sapien vel eros accumsan, vel aliquam enim elementum. Quisque rhoncus, odio ac molestie dictum, leo risus efficitur diam, sed suscipit libero nunc vitae est. Donec nibh felis, rhoncus vitae dolor sed, tincidunt eleifend tellus. Sed cursus lacus et ex facilisis tempus. Sed eget pellentesque orci.</p>
+  
+            <p>In enim lectus, maximus scelerisque sem finibus, convallis lobortis felis. Etiam non lacus ante. Etiam sed sodales enim. Maecenas id justo lacus. Donec ligula erat, volutpat ac fermentum sit amet, euismod quis ligula. Cras in odio malesuada, dictum leo eu, tempus justo. Vivamus auctor vitae purus quis accumsan.</p>
+  
+            <p>Ut sodales lacinia lectus, in fermentum ex hendrerit sed. Cras mollis ullamcorper tortor vitae malesuada. Integer commodo risus arcu. Proin felis dolor, iaculis in sem tempor, facilisis iaculis urna. Pellentesque sed fermentum nibh. Vestibulum tempus ipsum in pretium porttitor. Nullam pellentesque, mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna. Mauris sapien felis, vulputate varius dignissim eget, aliquet quis magna. Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus.</p>
+  
+  
+          <blockquote>
+            <p>Ut commodo, ligula non viverra congue, turpis ligula pharetra risus, ut sodales tellus nisl eget nisi. Pellentesque gravida nec ligula a ultrices. Morbi quis arcu sed nisl mattis aliquam.</p>
+          </blockquote>
+  
+        </div><!-- .row -->
+    </section>
+  
+
+    <!-- services-testimonials.html -->
+    {% include '../includes/services-testimonials.html' %}
+
+  </div><!-- .container -->
+</main><!-- #main -->
+
+  <!-- sidebar.html -->
+{% include '../includes/sidebar.html' %}
+
+
+{% endblock %}

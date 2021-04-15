@@ -1,0 +1,74 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Mojo Service | Demo and Dummy Only</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fancybox.css' %}">
+      <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" />
+    	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+      <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
+      <link rel="stylesheet" href="{% static 'genericons/genericons.css' %}" />
+
+      <!-- TODOS: only load when it is in gallery page -->
+      <link rel="stylesheet" href="{% static 'css/gallery.css' %}" />
+
+    	<link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+    	<!-- Adds HTML5 element support for earlier versions of IE -->
+    	<!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+
+  </head>
+  <body>
+
+    <header>
+
+      <div class="top-bar-line"></div>
+
+          <div class="container">
+            <section class="visible-xs">
+              <!-- top-mobile.html -->
+              {% include 'includes/top-mobile.html' %} 
+            </section><!-- visible-xs -->
+
+            <!-- top-sociel-icon.html -->
+            {% include 'includes/top-social-icon.html' %}
+
+            <nav class="navigation main-menu collapse navbar-collapse" id="collapse" role="navigation">
+              <ul class="text-center">
+                  <li {% if '/' == request.path %}class="active"{% endif %} ><a href="{% url 'home' %}" title="Home">Home</a></li>
+                  <li {% if 'about' in request.path %}class="active"{% endif %}><a href="{% url 'about' %}" title="About">About</a></li>
+                  <li {% if 'gallery' in request.path %}class="active"{% endif %}><a href="{% url 'gallery' %}" title="Gallery">Gallery</a></li>
+                  <li {% if 'news' in request.path %}class="active"{% endif %}><a href="{% url 'news' %}" title="News">News</a></li>
+                  <li {% if 'contact' in request.path %}class="active"{% endif %}><a href="{% url 'contact' %}" title="Contact">Contact</a></li>
+              </ul>
+            </nav><!-- #collapse -->
+
+          </div><!-- #container -->
+
+    </header>
+
+{% block content %}
+
+{% endblock %}
+
+
+  <footer>
+    <section id="page-footer" class="container text-center">
+            <p>&copy; 2017 <a href="http://aljunm.com" title="Web Design and Development">aljunm</a></p>
+    </section>
+  </footer>
+
+
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <!-- TODOS: load this script when in gallery page -->
+  <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+  <script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

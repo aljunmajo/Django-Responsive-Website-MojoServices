@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<main id="main">
+  <div class="container">
+    <section class="blog">
+        <div class="blog-article">
+  
+           <article class="blog-post text-center">
+              <header>
+                <img class="img img-responsive center-block" src="{% static 'images/post-featured-01.jpg' %}" alt="Alt Image">
+  
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <div class="meta">
+                  <div class="date">Posted on <span>July 8, 2017</span></div>
+                  <div class="author">By <a href="">admin</a></div>
+                  <div class="post-comment"><a href="">Leave a comment</a></div>
+                </div>
+              </header>
+              <p class="blog-content">Ut sodales lacinia lectus, in fermentum ex hendrerit sed. Cras mollis ullamcorper tortor vitae malesuada. Integer commodo risus arcu. Proin felis dolor, iaculis in sem tempor, facilisis iaculis urna. Pellentesque sed fermentum nibh. Vestibulum tempus ipsum in pretium porttitor. Nullam pellentesque, mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna. Mauris sapien felis, vulputate varius dignissim eget, aliquet quis magna. Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus.</p>
+              <a class="btn cta-more btn-bg-blue white-color" href="">Read more</a>
+           </article>
+           <article class="blog-post text-center">
+              <header>
+                <img class="img img-responsive center-block" src="{% static 'images/post-featured-02.jpg' %}" alt="Alt Image">
+  
+                <h2>Ut sodales lacinia lectus, in fermentum ex hendrerit sed.</h2>
+                <div class="meta">
+                  <div class="date">Posted on <span>July 30, 2017</span></div>
+                  <div class="author">By <a href="">admin</a></div>
+                  <div class="post-comment"><a href="">Leave a comment</a></div>
+                </div>
+              </header>
+              <p class="blog-content">Ut sodales lacinia lectus, in fermentum ex hendrerit sed. Cras mollis ullamcorper tortor vitae malesuada. Integer commodo risus arcu. Proin felis dolor, iaculis in sem tempor, facilisis iaculis urna. Pellentesque sed fermentum nibh. Vestibulum tempus ipsum in pretium porttitor. Nullam pellentesque, mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna. Mauris sapien felis, vulputate varius dignissim eget, aliquet quis magna. Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus.</p>
+              <a class="btn cta-more btn-bg-blue white-color" href="">Read more</a>
+           </article>
+           <article class="blog-post text-center">
+            <header>
+              <img class="img img-responsive center-block" src="{% static 'images/post-featured-03.jpg' %}" alt="alt Image">
+  
+              <h2>Ut sodales lacinia lectus, in fermentum ex hendrerit sed.</h2>
+              <div class="meta">
+                <div class="date">Posted on <span>July 30, 2017</span></div>
+                <div class="author">By <a href="">admin</a></div>
+                <div class="post-comment"><a href="">Leave a comment</a></div>
+              </div>
+            </header>
+            <p class="blog-content">Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus. Ut sodales lacinia lectus, in fermentum ex hendrerit sed. Cras mollis ullamcorper tortor vitae malesuada. Integer commodo risus arcu. Proin felis dolor, iaculis in sem tempor, facilisis iaculis urna. Pellentesque sed fermentum nibh. Vestibulum tempus ipsum in pretium porttitor. Nullam pellentesque, mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna. Mauris sapien felis, vulputate varius dignissim eget, aliquet quis magna. Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus.</p>
+            <a class="btn cta-more btn-bg-blue white-color" href="">Read more</a>
+           </article>
+  
+        </div><!-- .blog-article -->
+      </section> <!-- .blog -->
+  
+
+    <!-- services-testimonials.html -->
+    {% include '../includes/services-testimonials.html' %}
+
+  </div><!-- .container -->
+</main><!-- #main -->
+
+  <!-- sidebar.html -->
+{% include '../includes/sidebar.html' %}
+
+
+{% endblock %}

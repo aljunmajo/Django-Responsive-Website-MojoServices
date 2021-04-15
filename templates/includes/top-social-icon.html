@@ -1,0 +1,42 @@
+{% load static %}
+
+<section class="nav-header row">
+  <div class="logo-wrapper col-xs-12 col-sm-6 col-md-6">
+      <h1>
+          <a href="{% url 'home' %}" class="navbar-brand" title="Site logo">
+              <img src="{% static 'images/logo.png' %}" alt="Mojo Services" class="img img-responsive">
+          </a>
+      </h1>
+  </div><!-- .logo-wrapper -->
+
+  <div class="social-media-wrapper col-xs-12 col-sm-6 col-md-6">
+      <nav class="social-navigation">
+        <div class="menu-social-link-container">
+            <ul id="menu-social-link" class="list-unstyled">
+              <li>
+                <a href="http://instagram.com" target="_blank">
+                  <span class="screen-reader-text">instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://twitter.com/aljunmojo" target="_blank">
+                  <span class="screen-reader-text">twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://youtube.com" target="_blank">
+                  <span class="screen-reader-text">youtube</span>
+                </a>
+              </li>
+               <li>
+                <a href="http://github.com/jun20" target="_blank">
+                  <span class="screen-reader-text">github</span>
+                </a>
+              </li>
+            </ul>
+        </div><!-- .menu-social-link-container -->
+      </nav>
+      <div class="clearfix"></div>
+  </div><!-- .social-media-wrapper -->
+
+</section>

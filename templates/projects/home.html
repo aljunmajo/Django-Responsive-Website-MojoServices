@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<main id="main">
+  <div class="container">
+    <section id="hero-carousel">
+      <div class="row">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="{% static 'images/slider/slider-01.jpg' %}" class="img img-responsive" />
+                <div class="about-ac">
+                  <h3>Donec scelerisque mi tellus, mollis placerat velit lobortis at. <a href="https://agoodmojo.com/" class="btn btn-lg btn-link white-color">more info <i class="fa fa-external-link " aria-hidden="true"></i></a></h3>
+
+                </div>
+            </li>
+            <li>
+              <img src="{% static 'images/slider/slider-02.jpg' %}" class="img img-responsive" />
+                 <div class="about-ac">
+                  <h3>Praesent et lorem tempus augue placerat ultrices. <a href="https://agoodmojo.com/" class="btn btn-lg btn-link white-color">more info <i class="fa fa-external-link " aria-hidden="true"></i></a></h3>
+                </div>
+            </li>
+            <li>
+              <img src="{% static 'images/slider/slider-03.jpg' %}" class="img img-responsive" />
+                <div class="about-ac">
+                  <h3>Donec nibh felis, rhoncus vitae dolor sed, tincidunt eleifend tellus. <a href="https://agoodmojo.com/" class="btn btn-lg btn-link white-color">more info <i class="fa fa-external-link " aria-hidden="true"></i></a></h3>
+                </div>        </li>
+            <li>
+              <img src="{% static 'images/slider/slider-04.jpg' %}" class="img img-responsive" />
+                 <div class="about-ac">
+                  <h3>Ut sodales lacinia lectus, in fermentum ex hendrerit sed. <a href="https://agoodmojo.com/" class="btn btn-lg btn-link white-color">more info <i class="fa fa-external-link " aria-hidden="true"></i></a></h3>
+                </div>
+            </li>
+          </ul>
+        </div><!-- .flexslider -->
+      </div><!-- .row -->
+    </section><!-- #hero-carousel -->
+
+    <!-- #hero-content -->
+    <section id="hero-content" class="layout-wrapper row">
+        <div class="services col-sm-12 col-md-8">
+
+            <h2>Ut sodales lacinia lectus, <strong>in fermentum ex hendrerit sed.</strong>.</h2>
+
+            <h4>In enim lectus, maximus scelerisque sem finibus, convallis lobortis felis. Etiam non lacus ante. Etiam sed sodales enim. Maecenas id justo lacus. Donec ligula erat, volutpat ac fermentum sit amet, euismod quis ligula.</h4>
+
+            <p>Ut sodales lacinia lectus, in fermentum ex hendrerit sed. Cras mollis ullamcorper tortor vitae malesuada. Integer commodo risus arcu. Proin felis dolor, iaculis in sem tempor, facilisis iaculis urna. Pellentesque sed fermentum nibh. Vestibulum tempus ipsum in pretium porttitor. Nullam pellentesque, mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna. Mauris sapien felis, vulputate varius dignissim eget, aliquet quis magna. Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus.</p>
+
+            <div class="our-services">
+              <h4>Our Services:</h4>
+              <ul>
+                 <li>Ut sodales lacinia lectus</li>
+                  <li>Pellentesque sed fermentum nibh</li>
+                  <li>Nullam pellentesque, mauris at consectetur</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Etiam non dignissim leo</li>
+              </ul>
+            </div>
+
+            <div class="get-quote">
+              <h4>Get a Quote</h4>
+              <p>Click the button below to work with us.</p>
+              <p><a href="#" class="btn btn-lg my-secondary-bgcolor white-color quote-btn btn-ui">Quote Link</a></p>
+            </div>
+
+        </div>
+        <div id="frontpage-contact-form" class="contact-wrapper col-sm-12 col-md-4">
+          <div class="contact-form">
+
+            <h3 class="post-title">Contact Us</h3>
+            <p>Please fill-out the form below more information.</p>
+
+
+            <section>
+             <!-- <form method="" action=""> -->
+               <form action="#" class="form-horizontal mojo-contact" id="inline-validate">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name *">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter Address *">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input type="number" class="form-control" name="telphone" id="telphone" placeholder="Phone Number *">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <textarea name="message" id="message" class="form-control" rows="3" placeholder="Please type your question here"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- Button -->
+                        <div class="col-xs-12">
+                            <button id="btn-message" type="Submit" class="button-submit btn-ui my-secondary-bgcolor white-color"><i class="icon-hand-right"></i> <span class="fa fa-sign-in" aria-hidden="true"></span> Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+              <!--   </form> -->
+              </section>
+
+          </div><!-- .contact-form -->
+        </div><!-- #frontpage-contact-form -->
+
+
+    </section>
+    <!-- #END hero-content -->
+
+    <!-- services-testimonials.html -->
+    {% include '../includes/services-testimonials.html' %}
+
+  </div><!-- .container -->
+</main><!-- #main -->
+
+  <!-- sidebar.html -->
+{% include '../includes/sidebar.html' %}
+
+
+{% endblock %}
